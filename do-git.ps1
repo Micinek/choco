@@ -1,5 +1,15 @@
-# Ensure we can run everything
-Set-ExecutionPolicy Bypass -Scope Process -Force;
+# Check if the script is running as administrator
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    # Relaunch the script as administrator
+    Start-Process powershell.exe "-File '$PSCommandPath'" -Verb RunAs
+    Exit
+  }
+  
+  # Your script code goes here
+  Write-Host "This script is running as administrator."
+  
+  # Ensure we can run everything
+  Set-ExecutionPolicy Bypass -Scope Process -Force;
 
 @echo off
 
