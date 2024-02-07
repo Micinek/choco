@@ -1,5 +1,6 @@
-@echo off
+Install-Module posh-git -Scope CurrentUser -Force
 
+@echo off
 :: Define the URL of the repository
 set repository_url=https://github.com/Micinek/choco.git
 
