@@ -1,3 +1,6 @@
+# Ensure we can run everything
+Set-ExecutionPolicy Bypass -Scope Process -Force;
+
 @echo off
 
 :: Define the URL of the repository
