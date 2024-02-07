@@ -1,6 +1,6 @@
 @echo off
-:: Enable PowerShell script execution
-powershell -Command "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser"
+:: Enable PowerShell script execution bypassing the execution policy
+powershell -Command "Set-ExecutionPolicy Bypass -Scope Process -Force"
 echo PowerShell script execution enabled.
 pause
 
