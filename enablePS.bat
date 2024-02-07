@@ -5,6 +5,11 @@ echo PowerShell script execution enabled.
 pause
 
 @echo off
+:: Installwing Git.Git
+winget install --id Git.Git -e --source winget
+pause
+
+@echo off
 
 :: Open PowerShell as administrator
 echo Opening PowerShell as administrator...
