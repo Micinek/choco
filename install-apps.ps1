@@ -1,5 +1,5 @@
 # Specify the list of apps to install as a space-separated string
-$apps = "adobereader googlechrome notepadplusplus.install 7zip.install thunderbird teamviewer vlc winrar totalcommander"
+$apps = "adobereader googlechrome notepadplusplus.install 7zip.install thunderbird teamviewer vlc winrar totalcommander "
 
 # Prompt the user if they want to install a VPN
 $installVPN = Read-Host "Do you want to install a VPN? (yes/no)"
